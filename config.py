@@ -6,7 +6,7 @@ import json
 load_dotenv()
 
 # Application Config
-ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'thieutrung@2025')
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD')
 COHERE_API_KEY = os.getenv('COHERE_API_KEY')
 MAX_FILE_SIZE_MB = int(os.getenv('MAX_FILE_SIZE_MB', 10))
 SESSION_EXPIRY_MINUTES = int(os.getenv('SESSION_EXPIRY_MINUTES', 30))
